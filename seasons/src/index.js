@@ -1,23 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import SeasonDisplay from "./SeasonDisplay";
-
-// const App = () => {
-
-//   return (
-//     <div>
-//       <div> Hi There</div>
-//       <SeasonDisplay></SeasonDisplay>
-//     </div>
-//   );
-// };
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SeasonDisplay from './SeasonDisplay';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    //THIS IS THE ONLY TIME WE DO DIRECT ASSIGNMENT to this.state
-    this.state = { lat: null, errorMessage: "" };
+    this.state = { lat: null, errorMessage: '' };
+  }
+  // state = { lat: null, errorMessage: '' };
 
+  componentDidMount() {
     window.navigator.geolocation.getCurrentPosition(
       (position) => {
         this.setState({ lat: position.coords.latitude });
@@ -27,15 +19,16 @@ class App extends React.Component {
       }
     );
   }
+
   render() {
     if (this.state.errorMessage && !this.state.lat) {
       return <div> Error : {this.state.errorMessage}</div>;
     }
     if (!this.state.errorMessage && this.state.lat) {
-      return <div> Latitude : {this.state.lat}</div>;
+      return <SeasonDisplay lat={this.state.lat} />;
     }
     return <div> Loading!!</div>;
   }
 }
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector('#root'));
