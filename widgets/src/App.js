@@ -64,10 +64,27 @@ const App = () => {
   return (
     <div>
       <h1> App </h1>
-      {showAccordian()}
+      {/* {showAccordian()}
       {showList()}
       {showDropdown()}
-      {showTranslate()}
+      {showTranslate()} */}
+      <Route path="/">
+        <Accordion items={items}></Accordion>
+      </Route>
+      <Route path="/list">
+        <Search items={items}></Search>
+      </Route>
+      <Route path="/dropdown">
+        <Dropdown
+          label="Select a color"
+          options={options}
+          selected={selected}
+          onSelectedChange={setSelected}
+        ></Dropdown>
+      </Route>
+      <Route path="/translate">
+        <Translate items={items}></Translate>
+      </Route>
       {/* <Accordion items={items} /> */}
       {/* <Search /> */}
       {/* <Dropdown
