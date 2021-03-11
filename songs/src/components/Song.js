@@ -11,7 +11,7 @@ class Song extends React.Component {
       <div>
         <div>
           <h2> Song title is : {this.props.title}</h2>
-          <h3> Song Duration : {this.props.duration}</h3>
+          <h3> Song Duration is : {this.props.duration}</h3>
           <button
             onClick={() =>
               //   this.selectSong(this.props.title, this.props.duration)
