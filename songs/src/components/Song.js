@@ -10,7 +10,7 @@ class Song extends React.Component {
     return (
       <div>
         <div>
-          <h2> Song title : {this.props.title}</h2>
+          <h2> Song title is : {this.props.title}</h2>
           <h3> Song Duration : {this.props.duration}</h3>
           <button
             onClick={() =>
