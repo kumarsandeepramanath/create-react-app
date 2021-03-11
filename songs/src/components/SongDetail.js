@@ -6,7 +6,7 @@ class SongDetail extends React.Component {
     const songDuration = this.props.songDuration;
     return (
       <div>
-        <h1> {songTitle.length > 0 ? `Song title is ${songTitle}` : ''}</h1>
+        <h1> {songTitle.length > 0 ? `Song title is  - ${songTitle}` : ''}</h1>
         <h1>
           {' '}
           {songDuration.length > 0 ? `Song Duration is ${songDuration}` : ''}
