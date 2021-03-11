@@ -18,7 +18,7 @@ class Song extends React.Component {
               this.props.onSongSelect(this.props.title, this.props.duration)
             }
           >
-            Select Song to play
+            Select Song to display
           </button>
         </div>
       </div>
