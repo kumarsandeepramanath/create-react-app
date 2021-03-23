@@ -1,6 +1,8 @@
 import React from 'react';
 import SongDetail from './SongDetail';
 import SongList from './SongList';
+import MyDocument from './PdfDownloader';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 const songs = [
   {
     songTitle: 'A  walk to remember',
@@ -36,6 +38,15 @@ class App extends React.Component {
           songTitle={this.state.selectedSongTitle}
           songDuration={this.state.selectedSongDuration}
         />
+        {/* <MyDocument /> */}
+        {/* <PDFDownloadLink>
+          <MyDocument />
+        </PDFDownloadLink> */}
+        <PDFDownloadLink document={<MyDocument />} fileName="Norms.pdf">
+          {({ blob, url, loading, error }) =>
+            loading ? 'Loading document...' : 'Download now!'
+          }
+        </PDFDownloadLink>
       </div>
     );
   }
