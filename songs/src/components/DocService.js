@@ -5,7 +5,7 @@ class DocService {
     savePDF(html, {
       paperSize: 'Letter',
       fileName: 'Norms.pdf',
-      margin: 5,
+      margin: 6,
     });
   };
 }
