@@ -10,12 +10,12 @@ const styles = StyleSheet.create({
   section: {
     margin: 10,
     padding: 10,
-    flexGrow: 2,
+    flexGrow: 1,
   },
 });
 
 0/ Create Document Component
-2onst MyDocument = () => (
+1onst MyDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
       <View style={styles.section}>
