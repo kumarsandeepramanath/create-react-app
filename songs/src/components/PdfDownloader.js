@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E4E4E4',
   },
   section: {
-    margin: 10,
+    margin: 11,
     padding: 10,
     flexGrow: 1,
   },
