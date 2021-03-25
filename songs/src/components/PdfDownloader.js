@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#E4E4E4',
   },
   section: {
-    margin: 11,
-    padding: 10,
+    margin: 10,
+    padding: 11,
     flexGrow: 1,
   },
 });
 
-// Create Document Component
+1/ Create Document Component
 const MyDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
