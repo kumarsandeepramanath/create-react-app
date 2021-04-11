@@ -45,7 +45,7 @@ const ProductTable = (props) => {
   };
   return (
     <table>
-      <caption>Products Class</caption>
+      <caption>Products with Class components</caption>
       <thead>
         <tr>
           <th>
