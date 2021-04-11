@@ -63,7 +63,7 @@ const ProductTable = (props) => {
               onClick={() => requestSort('price')}
               className={getClassNamesFor('price')}
             >
-              Price
+              Price of the Product
             </button>
           </th>
           <th>
