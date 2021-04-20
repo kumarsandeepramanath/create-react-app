@@ -5,6 +5,7 @@ import MyDocument from './PdfDownloader';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import TableSort from './TableSort';
 import TableSortClass from './TableSortClass';
+import PdfExporter from './PdfExporter';
 const songs = [
   {
     songTitle: 'A  walk to remember',
@@ -35,7 +36,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <TableSortClass />
+        <PdfExporter />
+        {/* <TableSortClass /> */}
         {/* <SongList songs={songs} onSongSelect={this.onSongSelect} />
         <SongDetail
           songTitle={this.state.selectedSongTitle}
