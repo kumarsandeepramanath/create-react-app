@@ -30,16 +30,16 @@ function createPdf() {
     theme: 'striped',
   });
 
-  doc.autoTable(columns, rows, {
-    startY: doc.autoTableEndPosY() + 70,
-    margin: { horizontal: 10 },
-    styles: { overflow: 'linebreak' },
-    bodyStyles: { valign: 'top' },
-    columnStyles: { email: { cellWidth: 'wrap' } },
-    theme: 'striped',
-  });
-  doc.save('repro.pdf');
-}
+//   doc.autoTable(columns, rows, {
+//     startY: doc.autoTableEndPosY() + 70,
+//     margin: { horizontal: 10 },
+//     styles: { overflow: 'linebreak' },
+//     bodyStyles: { valign: 'top' },
+//     columnStyles: { email: { cellWidth: 'wrap' } },
+//     theme: 'striped',
+//   });
+//   doc.save('repro.pdf');
+// }
 
 class PdfExporter extends React.Component {
   render() {
