@@ -31,7 +31,6 @@ function createPdf() {
   });
 
   doc.autoTable(columns, rows, {
-    // autotable does not exist issue persists with a React version
     startY: doc.autoTableEndPosY() + 70,
     margin: { horizontal: 10 },
     styles: { overflow: 'linebreak' },
