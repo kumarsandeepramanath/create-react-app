@@ -31,6 +31,7 @@ function createPdf() {
   });
 
   doc.autoTable(columns, rows, {
+    // autotable does not exist issue persists with a React version
     startY: doc.autoTableEndPosY() + 70,
     margin: { horizontal: 10 },
     styles: { overflow: 'linebreak' },
@@ -45,7 +46,7 @@ class PdfExporter extends React.Component {
   render() {
     return (
       <div>
-        Pdf Exporter Autotable issue does not exist here
+        Pdf Exporter Autotable issue does not exist here.
         <br />
         <button onClick={createPdf}>Click to Download pdf</button>
       </div>
