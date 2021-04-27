@@ -47,7 +47,7 @@ class PdfExporter extends React.Component {
       <div>
         Pdf Exporter Autotable issue does not exist here.
         <br />
-        <button onClick={createPdf}>Click here to PDF</button>
+        <button onClick={createPdf}>Click here to download PDF</button>
       </div>
     );
   }
