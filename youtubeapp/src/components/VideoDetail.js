@@ -6,7 +6,7 @@ class VideoDetail extends React.Component {
       return <div> Loading...</div>;
     } else {
       // console.log(this.props.video?.snippet?.description);
-      const videoSrc = `http://www.youtube.com/embed/${this.props.video.id.videoId}`;
+      const videoSrc = `https://www.youtube.com/embed/${this.props.video.id.videoId}`;
       return (
         <div>
           <div className="ui embed">
